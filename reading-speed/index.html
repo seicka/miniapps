@@ -97,9 +97,31 @@
     .page {
       position: relative;
       z-index: 10;
-      max-width: 760px;
+      width: 100%;
+      max-width: 420px;
       margin: 0 auto;
-      padding: 32px 24px;
+      padding: 32px 16px;
+    }
+    @media (min-width: 640px) {
+      .page {
+        max-width: 580px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    @media (min-width: 768px) {
+      .page {
+        max-width: 720px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .page {
+        max-width: 760px;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
     }
 
     .top-right {
@@ -271,7 +293,7 @@
       gap: 24px;
       margin-bottom: 40px;
     }
-    @media (max-width: 650px) {
+    @media (max-width: 639px) {
       .calc-layout { grid-template-columns: 1fr; }
     }
 
@@ -391,6 +413,35 @@
       padding: 2px 4px;
     }
     .copy-btn:hover { color: var(--text); }
+
+    /* Pie de Página Canónico */
+    .site-footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .site-footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+    .site-footer a:hover {
+      color: var(--text);
+    }
+    @media (max-width: 639px) {
+      .site-footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+      }
+    }
   </style>
 </head>
 <body>
@@ -534,9 +585,9 @@
     </div>
 
     <!-- Footer Canónico -->
-    <footer style="margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-muted);">
+    <footer class="site-footer">
       <span data-i18n="footer_copy">© 2026 Dakesu. Ecosistema de Ficción y Novelas Orientales.</span>
-      <a href="https://dakesu.net" target="_blank" rel="noopener" style="color: var(--text-muted); text-decoration: none;">dakesu.net</a>
+      <a href="https://dakesu.net" target="_blank" rel="noopener">dakesu.net</a>
     </footer>
 
   </div>

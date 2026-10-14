@@ -7,6 +7,7 @@ Suite de micro-herramientas y visualizadores interactivos para Dakesu / SeiQOS d
 
 ## Skills Canónicas Activas
 Al inicializar o trabajar en cualquier herramienta de este portal:
+- [`design/universal-canvas-responsive`](file:///C:/SeiqOS/skills/design/universal-canvas-responsive/SKILL.md) — Matriz canónica de 6 niveles y lienzos acotados (max-w 420px / 580px / 720px / 760px / 1200px).
 - [`design/layout-grid-architect`](file:///C:/SeiqOS/skills/design/layout-grid-architect/SKILL.md) — Modelo en 4 capas y alineación con Grid Ruler.
 - [`design/section-clone-distiller`](file:///C:/SeiqOS/skills/design/section-clone-distiller/SKILL.md) — Clonación limpia de utilidades web sin dependencias ajenas.
 - [`design/code-clean-sanitizer`](file:///C:/SeiqOS/skills/design/code-clean-sanitizer/SKILL.md) — Eliminación de sombras difusas, bordes innecesarios y deduplicación de clases.

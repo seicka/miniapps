@@ -116,9 +116,31 @@
     .page {
       position: relative;
       z-index: 10;
-      max-width: 760px;
+      width: 100%;
+      max-width: 420px;
       margin: 0 auto;
-      padding: 32px 24px;
+      padding: 32px 16px;
+    }
+    @media (min-width: 640px) {
+      .page {
+        max-width: 580px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    @media (min-width: 768px) {
+      .page {
+        max-width: 720px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+    }
+    @media (min-width: 1024px) {
+      .page {
+        max-width: 760px;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
     }
 
     /* Top Bar con Menú de Tools Integrado */
@@ -301,7 +323,7 @@
       align-items: flex-end;
       margin-bottom: 36px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 639px) {
       .controls { grid-template-columns: 1fr; }
     }
 
@@ -380,7 +402,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 16px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 639px) {
       .results { grid-template-columns: 1fr; }
     }
 
@@ -538,7 +560,7 @@
     .site-footer a:hover {
       color: var(--text);
     }
-    @media (max-width: 600px) {
+    @media (max-width: 639px) {
       .site-footer {
         flex-direction: column;
         gap: 8px;
